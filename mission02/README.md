@@ -1,6 +1,8 @@
 # 엘리멘탈 포스터 제작
 
-다음 과제 : 포스터 변경 시 재생 중이던 오디오 정지...
+<p align="left"><img width="200" alt="image" src="https://github.com/JWJung-99/js-homework/assets/84115816/1dd4b26b-2abb-451e-8924-8449f9676989"></p>
+
+보완할 점 : 포스터 변경 시 재생 중이던 오디오 정지하여 새로 재생되는 오디오와의 겹침 현상 개선....
 
 <br><br>
 
@@ -33,10 +35,13 @@
 ## 4. 주요 기능
 
 - 엠버 포스터
+<p align="left"><img width="200" alt="image" src="https://github.com/JWJung-99/js-homework/assets/84115816/1dd4b26b-2abb-451e-8924-8449f9676989"></p>
 
 - 웨이드 포스터
+<p align="left"><img width="200" alt="image" src="https://github.com/JWJung-99/js-homework/assets/84115816/cf076713-11a8-4bfe-9576-a88921971c93"></p>
 
 - 클로드 포스터
+<p align="left"><img width="200" alt="image" src="https://github.com/JWJung-99/js-homework/assets/84115816/5e1f53d8-50ac-4238-aa1e-3077ebd7fbb1"></p>
 
 - 게일 포스터
-
+<p align="left"><img width="200" alt="image" src="https://github.com/JWJung-99/js-homework/assets/84115816/a6b59cd8-69f2-41e3-beaf-a32a672598ed"></p>
