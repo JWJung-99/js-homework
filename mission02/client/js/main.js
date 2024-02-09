@@ -11,14 +11,13 @@
 
 import {getNode, getNodes, addClass, removeClass, attr, css} from '../lib/index.js';
 import data from './data.js';
-
+import AudioPlayer from './audio.js';
 
 const nav = getNode('.nav');
 const nickName = getNode('.nickName');
 const visualImage = getNode('.visual img');
 const body = getNode('body');
 const list = [...getNodes('.nav li')];
-
 
 function setBgColor(index) {
   css(body, 'background', `linear-gradient(to bottom, ${data[index].color[0]},${data[index].color[1]})`);
@@ -33,22 +32,27 @@ function setNameText(index) {
   nickName.textContent = data[index].name;
 }
 
+function playAudio(index) {
+  const audio = new AudioPlayer(`./assets/audio/${data[index].name.toLowerCase()}.m4a`);
+  audio.play();
+}
+
 function handleSlide(e) {
   e.preventDefault();
 
   const target = e.target.closest('li');
-
+  
   if (!target) return;
-
-  list.forEach(li => removeClass(li, 'is-active'));
-  addClass(target, 'is-active');
 
   const index = target.dataset.index - 1;
   
+  list.forEach(li => removeClass(li, 'is-active'));
+  addClass(target, 'is-active');
+
   setBgColor(index);
   setImage(index);
   setNameText(index);
+  playAudio(index);
 }
-
 
 nav.addEventListener('click', handleSlide);
