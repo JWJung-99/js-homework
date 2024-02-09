@@ -19,4 +19,7 @@ const data = [
     name: "GALE",
     alt: "게일 포스터",
   },
-];
+]
+
+
+export default data;
